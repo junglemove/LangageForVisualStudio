@@ -2,19 +2,19 @@
 /**
  * Created by Administrateur on 12/12/2016.
  */
-var readline = require("readline");
-var random = function getRandomArbitrary(min, max) {
+const readline = require("readline");
+const random = function getRandomArbitrary(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 };
 console.time("Random");
-var randomNumber = random(0, 100);
+const randomNumber = random(0, 100);
 console.timeEnd("Random");
-var arrayOfInputs = new Array();
-var rl = readline.createInterface({
+const arrayOfInputs = new Array();
+const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
-var play = function play() {
+const play = function play() {
     rl.question('Enter a number? ', function (answer) {
         if (isNaN(answer)) {
             throw Error("is not a number"); // ne peut pas s'utiliser dans une callback !
