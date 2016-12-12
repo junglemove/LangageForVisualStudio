@@ -3,13 +3,13 @@
  */
 console.log("Hello");
 
-let id = setInterval(function intervalHandler() {
+const id1 = setInterval(function intervalHandler() {
     console.log('ls');
 }, 1000);
 
 setTimeout(function timeoutHandler(){
     console.log('Bye');
-    clearInterval(id) // desinscrire la boucle de l'event loop
+    clearInterval(id1) // desinscrire la boucle de l'event loop
 },4500)
 
 

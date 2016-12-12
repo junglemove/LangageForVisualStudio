@@ -1,7 +1,8 @@
+"use strict";
 /**
  * Created by Administrateur on 12/12/2016.
  */
-var readline = require('readline');
+var readline = require("readline");
 var rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout

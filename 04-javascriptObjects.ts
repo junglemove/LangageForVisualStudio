@@ -1,7 +1,7 @@
 /**
  * Created by Administrateur on 12/12/2016.
  */
-const readline = require('readline');
+import readline = require("readline");
 
 const rl = readline.createInterface({
     input: process.stdin,

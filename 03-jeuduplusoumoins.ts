@@ -1,7 +1,7 @@
 /**
  * Created by Administrateur on 12/12/2016.
  */
-const readline = require('readline');
+import readline = require("readline");
 
 const random = function getRandomArbitrary(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
@@ -16,7 +16,7 @@ const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
-/*
+
 const play = function play(){
     rl.question('Enter a number? ', function(answer) {
 
@@ -45,10 +45,10 @@ const play = function play(){
     });
 };
 
-play();*/
+play();
 
-
+/*
 rl.question('line', function (input) { //Déclanche sur un input + enter dans la console
     console.log(input);
-})
+})*/
 

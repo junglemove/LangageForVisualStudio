@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/junglemove/LangageForVisualStudio/issues"
   },
-  "homepage": "https://github.com/junglemove/LangageForVisualStudio#readme"
+  "homepage": "https://github.com/junglemove/LangageForVisualStudio#readme",
+  "dependencies": {
+    "readline": "^1.3.0"
+  }
 }

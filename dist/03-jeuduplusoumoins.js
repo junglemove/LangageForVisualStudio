@@ -1,7 +1,8 @@
+"use strict";
 /**
  * Created by Administrateur on 12/12/2016.
  */
-var readline = require('readline');
+var readline = require("readline");
 var random = function getRandomArbitrary(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 };
@@ -13,16 +14,13 @@ var rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
-/*
-const play = function play(){
-    rl.question('Enter a number? ', function(answer) {
-
-        if(isNaN(answer)){
-            throw Error("is not a number");// ne peut pas s'utiliser dans une callback !
-                                            // console.log() à la place
-        };
-
-        if(answer ==  randomNumber){
+var play = function play() {
+    rl.question('Enter a number? ', function (answer) {
+        if (isNaN(answer)) {
+            throw Error("is not a number"); // ne peut pas s'utiliser dans une callback !
+        }
+        ;
+        if (answer == randomNumber) {
             arrayOfInputs.push("Answer: " + answer + " = " + "Random: " + randomNumber);
             console.log("Answer: " + answer + " = " + "Random: " + randomNumber);
             console.log("you win");
@@ -30,20 +28,22 @@ const play = function play(){
                 console.log(item, index);
             });
             rl.close();
-        }else if(answer > randomNumber ){
+        }
+        else if (answer > randomNumber) {
             arrayOfInputs.push("Answer: " + answer + " > " + "Random: " + randomNumber);
             console.log("Answer: " + answer + " > " + "Random: " + randomNumber);
             play();
-        }else{
+        }
+        else {
             arrayOfInputs.push("Answer: " + answer + " < " + "Random: " + randomNumber);
             console.log("Answer: " + answer + " < " + "Random: " + randomNumber);
             play();
         }
     });
 };
-
-play();*/
-rl.question('line', function (input) {
+play();
+/*
+rl.question('line', function (input) { //Déclanche sur un input + enter dans la console
     console.log(input);
-});
+})*/
 //# sourceMappingURL=03-jeuduplusoumoins.js.map
