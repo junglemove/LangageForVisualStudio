@@ -2,19 +2,19 @@
 /**
  * Created by Administrateur on 12/12/2016.
  */
-const readline = require("readline");
-const random = function getRandomArbitrary(min, max) {
+var readline = require("readline");
+var random = function getRandomArbitrary(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 };
 console.time("Random");
-const randomNumber = random(0, 100);
+var randomNumber = random(0, 100);
 console.timeEnd("Random");
-const arrayOfInputs = new Array();
-const rl = readline.createInterface({
+var arrayOfInputs = new Array();
+var rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
-const play = function play() {
+var play = function play() {
     rl.question('Enter a number? ', function (answer) {
         if (isNaN(answer)) {
             throw Error("is not a number"); // ne peut pas s'utiliser dans une callback !
@@ -46,4 +46,3 @@ play();
 rl.question('line', function (input) { //Déclanche sur un input + enter dans la console
     console.log(input);
 })*/
-//# sourceMappingURL=03-jeuduplusoumoins.js.map

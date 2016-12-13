@@ -3,20 +3,8 @@
   "version": "1.0.0",
   "description": "ORSYS",
   "main": "01-hello.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/junglemove/LangageForVisualStudio.git"
-  },
-  "author": "junglemove",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/junglemove/LangageForVisualStudio/issues"
-  },
-  "homepage": "https://github.com/junglemove/LangageForVisualStudio#readme",
-  "dependencies": {
-    "readline": "^1.3.0"
+  "devDependencies": {
+    "@types/node": "0.0.3",
+    "typescript": "^2.1.4"
   }
 }
