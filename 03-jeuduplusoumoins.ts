@@ -19,13 +19,10 @@ const rl = readline.createInterface({
 
 const play = function play(){
     rl.question('Enter a number? ', function(answer) {
+        
+        var inputNumber = Number.parseInt(answer);
 
-        if(isNaN(answer)){
-            throw Error("is not a number");// ne peut pas s'utiliser dans une callback !
-                                            // console.log() à la place
-        };
-
-        if(answer ==  randomNumber){
+        if(inputNumber ===  randomNumber){
             arrayOfInputs.push("Answer: " + answer + " = " + "Random: " + randomNumber);
             console.log("Answer: " + answer + " = " + "Random: " + randomNumber);
             console.log("you win");
@@ -33,7 +30,7 @@ const play = function play(){
                 console.log(item, index);
             });
             rl.close();
-        }else if(answer > randomNumber ){
+        }else if(inputNumber > randomNumber ){
             arrayOfInputs.push("Answer: " + answer + " > " + "Random: " + randomNumber);
             console.log("Answer: " + answer + " > " + "Random: " + randomNumber);
             play();

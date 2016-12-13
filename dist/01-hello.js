@@ -2,7 +2,7 @@
  * Created by Administrateur on 12/12/2016.
  */
 console.log("Hello");
-var id1 = setInterval(function intervalHandler() {
+const id1 = setInterval(function intervalHandler() {
     console.log('ls');
 }, 1000);
 setTimeout(function timeoutHandler() {
